@@ -14,7 +14,7 @@
   pydantic,
   pytest7CheckHook,
   pytest-cases,
-  pytest-cov,
+  pytest-cov-stub,
   pytest-xdist,
   python-dotenv,
   shortuuid,
@@ -58,7 +58,7 @@ buildPythonPackage rec {
     pydantic
     pytest7CheckHook
     pytest-cases
-    pytest-cov
+    pytest-cov-stub
     pytest-xdist
     python-dotenv
     shortuuid
