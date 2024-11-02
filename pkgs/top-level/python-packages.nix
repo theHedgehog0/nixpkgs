@@ -2866,6 +2866,8 @@ self: super: with self; {
 
   darkdetect = callPackage ../development/python-modules/darkdetect { };
 
+  darkgraylib = callPackage ../development/python-modules/darkgraylib { };
+
   dasbus = callPackage ../development/python-modules/dasbus { };
 
   dash = callPackage ../development/python-modules/dash { };
