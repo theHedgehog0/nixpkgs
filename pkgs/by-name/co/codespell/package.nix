@@ -1,10 +1,10 @@
 { lib
 , fetchFromGitHub
 , aspellDicts
-, python3
+, python3Packages
 }:
 
-python3.pkgs.buildPythonApplication rec {
+python3Packages.buildPythonApplication rec {
   pname = "codespell";
   version = "2.3.0";
   format = "pyproject";
@@ -16,11 +16,11 @@ python3.pkgs.buildPythonApplication rec {
     sha256 = "sha256-X3Pueu0E7Q57sbKSXqCZki4/PUb1WyWk/Zmj+lhVTM8=";
   };
 
-  nativeBuildInputs = with python3.pkgs; [
+  nativeBuildInputs = with python3Packages; [
     setuptools-scm
   ];
 
-  nativeCheckInputs = with python3.pkgs; [
+  nativeCheckInputs = with python3Packages; [
     aspell-python
     chardet
     pytestCheckHook
