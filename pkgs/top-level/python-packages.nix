@@ -10327,6 +10327,10 @@ self: super: with self; {
 
   ppk2-api = callPackage ../development/python-modules/ppk2-api { };
 
+  pre-commit = toPythonModule (pkgs.pre-commit.override {
+    python3Packages = self;
+  });
+
   primp = callPackage ../development/python-modules/primp {
     inherit (pkgs.darwin.apple_sdk.frameworks) SystemConfiguration;
   };
