@@ -2318,6 +2318,8 @@ self: super: with self; {
 
   clf = callPackage ../development/python-modules/clf { };
 
+  cli-base-utilities = callPackage ../development/python-modules/cli-base-utilities { };
+
   cli-ui = callPackage ../development/python-modules/cli-ui { };
 
   clip = callPackage ../development/python-modules/clip { };
