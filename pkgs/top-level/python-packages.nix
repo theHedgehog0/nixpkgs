@@ -11369,6 +11369,8 @@ self: super: with self; {
 
   pydantic-extra-types = callPackage ../development/python-modules/pydantic-extra-types { };
 
+  pydantic-pkgr = callPackage ../development/python-modules/pydantic-pkgr { };
+
   pydantic-scim = callPackage ../development/python-modules/pydantic-scim { };
 
   pydantic-settings = callPackage ../development/python-modules/pydantic-settings { };
