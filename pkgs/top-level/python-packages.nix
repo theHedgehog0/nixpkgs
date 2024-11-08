@@ -3531,6 +3531,8 @@ self: super: with self; {
 
   django-otp-webauthn = callPackage ../development/python-modules/django-otp-webauthn { };
 
+  django-override-storage = callPackage ../development/python-modules/django-override-storage { };
+
   django-paintstore = callPackage ../development/python-modules/django-paintstore { };
 
   django-parler = callPackage ../development/python-modules/django-parler { };
