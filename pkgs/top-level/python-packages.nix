@@ -3471,6 +3471,8 @@ self: super: with self; {
 
   django-huey = callPackage ../development/python-modules/django-huey { };
 
+  django-huey-monitor = callPackage ../development/python-modules/django-huey-monitor { };
+
   django-i18nfield = callPackage ../development/python-modules/django-i18nfield { };
 
   django-import-export = callPackage ../development/python-modules/django-import-export { };
