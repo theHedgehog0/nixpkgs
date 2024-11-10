@@ -12,6 +12,7 @@
   makeFontsConf,
   liberation_ttf_v2,
   exiftool,
+  pdfcpu,
   nixosTests,
   nix-update-script,
 }:
@@ -23,16 +24,16 @@ let
 in
 buildGoModule rec {
   pname = "gotenberg";
-  version = "8.9.1";
+  version = "8.13.0";
 
   src = fetchFromGitHub {
     owner = "gotenberg";
     repo = "gotenberg";
     rev = "refs/tags/v${version}";
-    hash = "sha256-y54DtOYIzFAk05TvXFcLdStfAXim3sVHBkW+R8CrtMM=";
+    hash = "sha256-ooKemeeEmHtPwvnKofTEb8XR9mz6ayxww3Sy7HiU3zg=";
   };
 
-  vendorHash = "sha256-BYcdqZ8TNEG6popRt+Dg5xW5Q7RmYvdlV+niUNenRG0=";
+  vendorHash = "sha256-bflfZX7AX/B5KAkhz3v3HjKJ6ccwxOtRkqKKJ6NZ1zI=";
 
   postPatch = ''
     find ./pkg -name '*_test.go' -exec sed -i -e 's#/tests#${src}#g' {} \;
@@ -52,6 +53,7 @@ buildGoModule rec {
     pdftk
     qpdf
     unoconv
+    pdfcpu
     mktemp
     jre'
   ];
@@ -62,6 +64,7 @@ buildGoModule rec {
     export QPDF_BIN_PATH=${getExe qpdf}
     export UNOCONVERTER_BIN_PATH=${getExe unoconv}
     export EXIFTOOL_BIN_PATH=${getExe exiftool}
+    export PDFCPU_BIN_PATH=${getExe pdfcpu}
     # LibreOffice needs all of these set to work properly
     export LIBREOFFICE_BIN_PATH=${libreoffice'}
     export FONTCONFIG_FILE=${fontsConf}
@@ -69,8 +72,19 @@ buildGoModule rec {
     export JAVA_HOME=${jre'}
   '';
 
-  # These tests fail with a panic, so disable them.
-  checkFlags = [ "-skip=^TestChromiumBrowser_(screenshot|pdf)$" ];
+  checkFlags =
+    let
+      skippedTests = [
+        # These tests fail with a panic, so disable them.
+        "TestChromiumBrowser_screenshot"
+        "TestChromiumBrowser_pdf"
+        # Require network access
+        "TestNewContext"
+      ];
+    in
+    [
+      "-skip=^${builtins.concatStringsSep "$|^" skippedTests}$"
+    ];
 
   preFixup = ''
     wrapProgram $out/bin/gotenberg \
@@ -78,6 +92,7 @@ buildGoModule rec {
       --set QPDF_BIN_PATH "${getExe qpdf}" \
       --set UNOCONVERTER_BIN_PATH "${getExe unoconv}" \
       --set EXIFTOOL_BIN_PATH "${getExe exiftool}" \
+      --set PDFCPU_BIN_PATH "${getExe pdfcpu}" \
       --set JAVA_HOME "${jre'}"
   '';
 
