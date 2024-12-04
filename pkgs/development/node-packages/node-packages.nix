@@ -31,15 +31,6 @@ let
         sha512 = "3yWxPTq3UQ/FY9p1ErPxIyfT64elWaMvM9lIHnaqpyft63tkxodF5aUElYHrdisWve5cETkh1+KBw1yJuW0aRw==";
       };
     };
-    "@alloc/quick-lru-5.2.0" = {
-      name = "_at_alloc_slash_quick-lru";
-      packageName = "@alloc/quick-lru";
-      version = "5.2.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz";
-        sha512 = "UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==";
-      };
-    };
     "@ampproject/remapping-2.3.0" = {
       name = "_at_ampproject_slash_remapping";
       packageName = "@ampproject/remapping";
@@ -16222,15 +16213,6 @@ let
         sha512 = "8WB3Jcas3swSvjIeA2yvCJ+Miyz5l1ZmB6HFb9R1317dt9LCQoswg/BGrmAmkWVEszSrrg4RwmO46qIm2OEnSA==";
       };
     };
-    "camelcase-css-2.0.1" = {
-      name = "camelcase-css";
-      packageName = "camelcase-css";
-      version = "2.0.1";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz";
-        sha512 = "QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==";
-      };
-    };
     "camelcase-keys-2.1.0" = {
       name = "camelcase-keys";
       packageName = "camelcase-keys";
@@ -21110,15 +21092,6 @@ let
         sha512 = "ObioMtXnmjYs3aRtpIJt9rgQSPCIhKVkFPip+E9GUDyWl8N435znUxK/JfNwGZJ2wnn5JKQ7Ly3vOK5Q5dylGA==";
       };
     };
-    "didyoumean-1.2.2" = {
-      name = "didyoumean";
-      packageName = "didyoumean";
-      version = "1.2.2";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz";
-        sha512 = "gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==";
-      };
-    };
     "diff-3.5.0" = {
       name = "diff";
       packageName = "diff";
@@ -21234,15 +21207,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/dlnacasts/-/dlnacasts-0.1.0.tgz";
         sha512 = "JsNDoe2UbFzsXRdOHmGK8JO1SR/3Dj7J9LCmTgo35ppYQ0dR2O+oe8T2kABBF4+Qas4auaILQ4rul+LWMhtEdw==";
-      };
-    };
-    "dlv-1.1.3" = {
-      name = "dlv";
-      packageName = "dlv";
-      version = "1.1.3";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz";
-        sha512 = "+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==";
       };
     };
     "dns-equal-1.0.0" = {
@@ -38511,15 +38475,6 @@ let
         sha512 = "gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==";
       };
     };
-    "object-hash-3.0.0" = {
-      name = "object-hash";
-      packageName = "object-hash";
-      version = "3.0.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/object-hash/-/object-hash-3.0.0.tgz";
-        sha512 = "RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==";
-      };
-    };
     "object-inspect-1.13.2" = {
       name = "object-inspect";
       packageName = "object-inspect";
@@ -41184,24 +41139,6 @@ let
         sha512 = "HeiOxGcuwID0AFsNAL0ox3mW6MHH5cstWN1Z3Y+n6H+g12ih7LHdYxWwEA/QmrebctLjo79xz9ouK3MroHwOJw==";
       };
     };
-    "postcss-import-15.1.0" = {
-      name = "postcss-import";
-      packageName = "postcss-import";
-      version = "15.1.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-import/-/postcss-import-15.1.0.tgz";
-        sha512 = "hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==";
-      };
-    };
-    "postcss-js-4.0.1" = {
-      name = "postcss-js";
-      packageName = "postcss-js";
-      version = "4.0.1";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-js/-/postcss-js-4.0.1.tgz";
-        sha512 = "dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==";
-      };
-    };
     "postcss-less-3.1.4" = {
       name = "postcss-less";
       packageName = "postcss-less";
@@ -41209,15 +41146,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/postcss-less/-/postcss-less-3.1.4.tgz";
         sha512 = "7TvleQWNM2QLcHqvudt3VYjULVB49uiW6XzEUFmvwHzvsOEF5MwBrIXZDJQvJNFGjJQTzSzZnDoCJ8h/ljyGXA==";
-      };
-    };
-    "postcss-load-config-4.0.2" = {
-      name = "postcss-load-config";
-      packageName = "postcss-load-config";
-      version = "4.0.2";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-4.0.2.tgz";
-        sha512 = "bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==";
       };
     };
     "postcss-load-config-5.1.0" = {
@@ -41380,15 +41308,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/postcss-modules-values/-/postcss-modules-values-4.0.0.tgz";
         sha512 = "RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==";
-      };
-    };
-    "postcss-nested-6.2.0" = {
-      name = "postcss-nested";
-      packageName = "postcss-nested";
-      version = "6.2.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-nested/-/postcss-nested-6.2.0.tgz";
-        sha512 = "HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==";
       };
     };
     "postcss-normalize-charset-5.1.0" = {
@@ -48796,15 +48715,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/table-layout/-/table-layout-0.4.5.tgz";
         sha512 = "zTvf0mcggrGeTe/2jJ6ECkJHAQPIYEwDoqsiqBjI24mvRmQbInK5jq33fyypaCBxX08hMkfmdOqj6haT33EqWw==";
-      };
-    };
-    "tailwindcss-3.4.12" = {
-      name = "tailwindcss";
-      packageName = "tailwindcss";
-      version = "3.4.12";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.12.tgz";
-        sha512 = "Htf/gHj2+soPb9UayUNci/Ja3d8pTmu9ONTfh4QY8r3MATTZOzmv6UYWF7ZwikEIC8okpfqmGqrmDehua8mF8w==";
       };
     };
     "tailwindcss-4.0.0-alpha.24" = {
@@ -56705,184 +56615,6 @@ in
     meta = {
       description = "A CLI tool to build for the Shopify platform";
       homepage = "https://github.com/shopify/cli#readme";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  "@tailwindcss/line-clamp" = nodeEnv.buildNodePackage {
-    name = "_at_tailwindcss_slash_line-clamp";
-    packageName = "@tailwindcss/line-clamp";
-    version = "0.4.4";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/@tailwindcss/line-clamp/-/line-clamp-0.4.4.tgz";
-      sha512 = "5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==";
-    };
-    dependencies = [
-      sources."@alloc/quick-lru-5.2.0"
-      sources."@cspotcode/source-map-support-0.8.1"
-      sources."@isaacs/cliui-8.0.2"
-      (sources."@jridgewell/gen-mapping-0.3.5" // {
-        dependencies = [
-          sources."@jridgewell/trace-mapping-0.3.25"
-        ];
-      })
-      sources."@jridgewell/resolve-uri-3.1.2"
-      sources."@jridgewell/set-array-1.2.1"
-      sources."@jridgewell/sourcemap-codec-1.5.0"
-      sources."@jridgewell/trace-mapping-0.3.9"
-      sources."@nodelib/fs.scandir-2.1.5"
-      sources."@nodelib/fs.stat-2.0.5"
-      sources."@nodelib/fs.walk-1.2.8"
-      sources."@swc/core-1.7.26"
-      sources."@swc/counter-0.1.3"
-      sources."@swc/helpers-0.5.13"
-      sources."@swc/types-0.1.12"
-      sources."@swc/wasm-1.7.26"
-      sources."@tsconfig/node10-1.0.11"
-      sources."@tsconfig/node12-1.0.11"
-      sources."@tsconfig/node14-1.0.3"
-      sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-22.5.5"
-      sources."acorn-8.12.1"
-      sources."acorn-walk-8.3.4"
-      sources."ansi-regex-5.0.1"
-      sources."ansi-styles-6.2.1"
-      sources."any-promise-1.3.0"
-      sources."anymatch-3.1.3"
-      sources."arg-5.0.2"
-      sources."balanced-match-1.0.2"
-      sources."binary-extensions-2.3.0"
-      sources."brace-expansion-2.0.1"
-      sources."braces-3.0.3"
-      sources."camelcase-css-2.0.1"
-      (sources."chokidar-3.6.0" // {
-        dependencies = [
-          sources."glob-parent-5.1.2"
-        ];
-      })
-      sources."color-convert-2.0.1"
-      sources."color-name-1.1.4"
-      sources."commander-4.1.1"
-      sources."create-require-1.1.1"
-      sources."cross-spawn-7.0.3"
-      sources."cssesc-3.0.0"
-      sources."didyoumean-1.2.2"
-      sources."diff-4.0.2"
-      sources."dlv-1.1.3"
-      sources."eastasianwidth-0.2.0"
-      sources."emoji-regex-9.2.2"
-      (sources."fast-glob-3.3.2" // {
-        dependencies = [
-          sources."glob-parent-5.1.2"
-        ];
-      })
-      sources."fastq-1.17.1"
-      sources."fill-range-7.1.1"
-      sources."foreground-child-3.3.0"
-      sources."function-bind-1.1.2"
-      sources."glob-10.4.5"
-      sources."glob-parent-6.0.2"
-      sources."hasown-2.0.2"
-      sources."is-binary-path-2.1.0"
-      sources."is-core-module-2.15.1"
-      sources."is-extglob-2.1.1"
-      sources."is-fullwidth-code-point-3.0.0"
-      sources."is-glob-4.0.3"
-      sources."is-number-7.0.0"
-      sources."isexe-2.0.0"
-      sources."jackspeak-3.4.3"
-      sources."jiti-1.21.6"
-      sources."lilconfig-2.1.0"
-      sources."lines-and-columns-1.2.4"
-      sources."lru-cache-10.4.3"
-      sources."make-error-1.3.6"
-      sources."merge2-1.4.1"
-      sources."micromatch-4.0.8"
-      sources."minimatch-9.0.5"
-      sources."minipass-7.1.2"
-      sources."mz-2.7.0"
-      sources."nanoid-3.3.7"
-      sources."normalize-path-3.0.0"
-      sources."object-assign-4.1.1"
-      sources."object-hash-3.0.0"
-      sources."package-json-from-dist-1.0.0"
-      sources."path-key-3.1.1"
-      sources."path-parse-1.0.7"
-      sources."path-scurry-1.11.1"
-      sources."picocolors-1.1.0"
-      sources."picomatch-2.3.1"
-      sources."pify-2.3.0"
-      sources."pirates-4.0.6"
-      sources."postcss-8.4.47"
-      sources."postcss-import-15.1.0"
-      sources."postcss-js-4.0.1"
-      (sources."postcss-load-config-4.0.2" // {
-        dependencies = [
-          sources."lilconfig-3.1.2"
-        ];
-      })
-      sources."postcss-nested-6.2.0"
-      sources."postcss-selector-parser-6.1.2"
-      sources."postcss-value-parser-4.2.0"
-      sources."queue-microtask-1.2.3"
-      sources."read-cache-1.0.0"
-      sources."readdirp-3.6.0"
-      sources."resolve-1.22.8"
-      sources."reusify-1.0.4"
-      sources."run-parallel-1.2.0"
-      sources."shebang-command-2.0.0"
-      sources."shebang-regex-3.0.0"
-      sources."signal-exit-4.1.0"
-      sources."source-map-js-1.2.1"
-      sources."string-width-5.1.2"
-      (sources."string-width-cjs-4.2.3" // {
-        dependencies = [
-          sources."emoji-regex-8.0.0"
-          sources."strip-ansi-6.0.1"
-        ];
-      })
-      (sources."strip-ansi-7.1.0" // {
-        dependencies = [
-          sources."ansi-regex-6.1.0"
-        ];
-      })
-      sources."strip-ansi-cjs-6.0.1"
-      sources."sucrase-3.35.0"
-      sources."supports-preserve-symlinks-flag-1.0.0"
-      sources."tailwindcss-3.4.12"
-      sources."thenify-3.3.1"
-      sources."thenify-all-1.6.0"
-      sources."to-regex-range-5.0.1"
-      sources."ts-interface-checker-0.1.13"
-      (sources."ts-node-10.9.2" // {
-        dependencies = [
-          sources."arg-4.1.3"
-        ];
-      })
-      sources."tslib-2.7.0"
-      sources."typescript-5.6.2"
-      sources."undici-types-6.19.8"
-      sources."util-deprecate-1.0.2"
-      sources."v8-compile-cache-lib-3.0.1"
-      sources."which-2.0.2"
-      sources."wrap-ansi-8.1.0"
-      (sources."wrap-ansi-cjs-7.0.0" // {
-        dependencies = [
-          sources."ansi-styles-4.3.0"
-          sources."emoji-regex-8.0.0"
-          sources."string-width-4.2.3"
-          sources."strip-ansi-6.0.1"
-        ];
-      })
-      sources."yaml-2.5.1"
-      sources."yn-3.1.1"
-    ];
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "A plugin that provides utilities for visually truncating text after a fixed number of lines.";
-      homepage = "https://github.com/tailwindlabs/tailwindcss-line-clamp#readme";
       license = "MIT";
     };
     production = true;
