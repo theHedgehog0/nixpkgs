@@ -6,7 +6,6 @@
 , "@commitlint/config-conventional"
 , "@microsoft/rush"
 , "@shopify/cli"
-, "@tailwindcss/typography"
 , "@uppy/companion"
 , {"@webassemblyjs/cli": "1.11.1"}
 , {"@webassemblyjs/repl": "1.11.1"}

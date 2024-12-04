@@ -33181,15 +33181,6 @@ let
         sha512 = "TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==";
       };
     };
-    "lodash.castarray-4.4.0" = {
-      name = "lodash.castarray";
-      packageName = "lodash.castarray";
-      version = "4.4.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/lodash.castarray/-/lodash.castarray-4.4.0.tgz";
-        sha512 = "aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==";
-      };
-    };
     "lodash.clone-4.5.0" = {
       name = "lodash.clone";
       packageName = "lodash.clone";
@@ -41571,15 +41562,6 @@ let
         sha512 = "jQmGnj0hSGLd9RscFw9LyuSVAa5Bl1/KBPqG1NQw9w8ND55nY4ZEsdlVuYJvLPpV+y0nwTV5v/4rHPzZRihQbA==";
       };
     };
-    "postcss-selector-parser-6.0.10" = {
-      name = "postcss-selector-parser";
-      packageName = "postcss-selector-parser";
-      version = "6.0.10";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz";
-        sha512 = "IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==";
-      };
-    };
     "postcss-selector-parser-6.0.2" = {
       name = "postcss-selector-parser";
       packageName = "postcss-selector-parser";
@@ -48715,15 +48697,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/table-layout/-/table-layout-0.4.5.tgz";
         sha512 = "zTvf0mcggrGeTe/2jJ6ECkJHAQPIYEwDoqsiqBjI24mvRmQbInK5jq33fyypaCBxX08hMkfmdOqj6haT33EqWw==";
-      };
-    };
-    "tailwindcss-4.0.0-alpha.24" = {
-      name = "tailwindcss";
-      packageName = "tailwindcss";
-      version = "4.0.0-alpha.24";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.0.0-alpha.24.tgz";
-        sha512 = "SOowAXp/sGer9VCOPO1HlnwbCmDz9nD/aXkdNzt4zkMRRlSAPdE1w6TD3I+RgR1qD0QDw5J9nkBA47mrFMjYPQ==";
       };
     };
     "tapable-0.2.9" = {
@@ -56615,33 +56588,6 @@ in
     meta = {
       description = "A CLI tool to build for the Shopify platform";
       homepage = "https://github.com/shopify/cli#readme";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  "@tailwindcss/typography" = nodeEnv.buildNodePackage {
-    name = "_at_tailwindcss_slash_typography";
-    packageName = "@tailwindcss/typography";
-    version = "0.5.15";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.15.tgz";
-      sha512 = "AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==";
-    };
-    dependencies = [
-      sources."cssesc-3.0.0"
-      sources."lodash.castarray-4.4.0"
-      sources."lodash.isplainobject-4.0.6"
-      sources."lodash.merge-4.6.2"
-      sources."postcss-selector-parser-6.0.10"
-      sources."tailwindcss-4.0.0-alpha.24"
-      sources."util-deprecate-1.0.2"
-    ];
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.";
-      homepage = "https://github.com/tailwindlabs/tailwindcss-typography#readme";
       license = "MIT";
     };
     production = true;

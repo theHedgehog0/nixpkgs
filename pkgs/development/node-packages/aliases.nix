@@ -51,6 +51,7 @@ mapAliases {
   "@tailwindcss/aspect-ratio" = throw "@tailwindcss/aspect-ratio has been removed. It should be installed with your preferred JS package manager instead"; # added 2024-12-04
   "@tailwindcss/forms" = throw "@tailwindcss/forms has been removed. It should be installed with your preferred JS package manager instead"; # added 2024-12-04
   "@tailwindcss/line-clamp" = throw "@tailwindcss/line-clamp has been removed. It should be installed with your preferred JS package manager instead"; # added 2024-12-04
+  "@tailwindcss/typography" = throw "@tailwindcss/typography has been removed. It should be installed with your preferred JS package manager instead"; # added 2024-12-04
   "@tailwindcss/language-server" = pkgs.tailwindcss-language-server; # added 2024-01-22
   "@volar/vue-language-server" = pkgs.vue-language-server; # added 2024-06-15
   "@vue/language-server" = pkgs.vue-language-server; # added 2024-06-15
