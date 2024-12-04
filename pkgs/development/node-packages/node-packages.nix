@@ -36206,15 +36206,6 @@ let
         sha512 = "+Vyi+GCCOHnrJ2VPS+6aPoXN2k2jgUzDRhTFLjjTBn23qyXJXkjUWQgTL+mXpF5/A8ixLdCc6kWsoeOjKGejKQ==";
       };
     };
-    "mini-svg-data-uri-1.4.4" = {
-      name = "mini-svg-data-uri";
-      packageName = "mini-svg-data-uri";
-      version = "1.4.4";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz";
-        sha512 = "r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==";
-      };
-    };
     "minimalistic-assert-1.0.1" = {
       name = "minimalistic-assert";
       packageName = "minimalistic-assert";
@@ -56714,28 +56705,6 @@ in
     meta = {
       description = "A CLI tool to build for the Shopify platform";
       homepage = "https://github.com/shopify/cli#readme";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  "@tailwindcss/forms" = nodeEnv.buildNodePackage {
-    name = "_at_tailwindcss_slash_forms";
-    packageName = "@tailwindcss/forms";
-    version = "0.5.9";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.5.9.tgz";
-      sha512 = "tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==";
-    };
-    dependencies = [
-      sources."mini-svg-data-uri-1.4.4"
-      sources."tailwindcss-4.0.0-alpha.24"
-    ];
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "A plugin that provides a basic reset for form styles that makes form elements easy to override with utilities.";
-      homepage = "https://github.com/tailwindlabs/tailwindcss-forms#readme";
       license = "MIT";
     };
     production = true;

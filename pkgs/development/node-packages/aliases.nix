@@ -49,6 +49,7 @@ mapAliases {
   "@nerdwallet/shepherd" = pkgs.shepherd; # added 2023-09-30
   "@nestjs/cli" = pkgs.nest-cli; # Added 2023-05-06
   "@tailwindcss/aspect-ratio" = throw "@tailwindcss/aspect-ratio has been removed. It should be installed with your preferred JS package manager instead";
+  "@tailwindcss/forms" = throw "@tailwindcss/forms has been removed. It should be installed with your preferred JS package manager instead";
   "@tailwindcss/language-server" = pkgs.tailwindcss-language-server; # added 2024-01-22
   "@volar/vue-language-server" = pkgs.vue-language-server; # added 2024-06-15
   "@vue/language-server" = pkgs.vue-language-server; # added 2024-06-15
