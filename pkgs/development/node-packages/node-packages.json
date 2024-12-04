@@ -6,7 +6,6 @@
 , "@commitlint/config-conventional"
 , "@microsoft/rush"
 , "@shopify/cli"
-, "@tailwindcss/aspect-ratio"
 , "@tailwindcss/forms"
 , "@tailwindcss/line-clamp"
 , "@tailwindcss/typography"
